@@ -22,7 +22,7 @@ public class PlanSpec {
      */
     public static void main(String[] args) throws Exception {
         // by default credentials are read from the '.credentials' file
-        BambooServer bambooServer = new BambooServer("http://localhost:8085");
+        BambooServer bambooServer = new BambooServer("http://eliasz.office.atlassian.com:8085");
 
         Plan plan = new PlanSpec().createPlan();
         bambooServer.publish(plan);
@@ -33,7 +33,7 @@ public class PlanSpec {
 
     PlanPermissions createPlanPermission(PlanIdentifier planIdentifier) {
         Permissions permissions = new Permissions()
-                .userPermissions("admin", PermissionType.ADMIN)
+                .userPermissions("bamboo", PermissionType.ADMIN)
                 .groupPermissions("bamboo-admin", PermissionType.ADMIN)
                 .loggedInUserPermissions(PermissionType.BUILD)
                 .anonymousUserPermissionView();
@@ -44,12 +44,12 @@ public class PlanSpec {
 
     Project project() {
         return new Project()
-                .name("My Project")
-                .key("PROJ");
+                .name("GitHub Specs")
+                .key("GHSPECS");
     }
 
     Plan createPlan() {
-        return new Plan(project(), "My Plan", "PLAN")
-                .description("Plan created from Bamboo Java Specs");
+        return new Plan(project(), "Test Plan", "TEST")
+                .description("Plan created from Bamboo Java Specs in GitHub");
     }
 }
