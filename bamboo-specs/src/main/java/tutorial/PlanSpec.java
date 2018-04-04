@@ -82,8 +82,8 @@ public class PlanSpec {
         return new Plan(project(), "Test Plan", "TEST")
                 .description("Plan created from Bamboo Java Specs in GitHub")
 	    .stages(new Stage("Default Stage")
-		    .jobs(new Job("Default Job"),
-			  new BambooKey("GHJOB1"))
+		    .jobs(new Job("Default Job",
+				  new BambooKey("GHJOB1")))
 		    .tasks(new ScriptTask()
 			   .inlineBody("echo 'foo bar'\ndate\necho 'hello world!!!'")));
     }
