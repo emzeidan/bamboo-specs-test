@@ -85,6 +85,6 @@ public class PlanSpec {
 		    .jobs(new Job("Default Job"),
 			  new BambooKey("GHJOB1"))
 		    .tasks(new ScriptTask()
-			   .inlineBody("echo foo\ndate\necho 'hello world'")));
+			   .inlineBody("echo 'foo bar'\ndate\necho 'hello world'")));
     }
 }
