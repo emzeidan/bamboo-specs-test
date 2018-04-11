@@ -90,6 +90,6 @@ public class PlanSpec {
 				 .inlineBody("echo 'more foobars and snafus and such'")
 				 )
 			  )
-		    )
+		    );
 	    }
 }
