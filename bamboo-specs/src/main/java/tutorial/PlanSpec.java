@@ -87,7 +87,9 @@ public class PlanSpec {
 			  .tasks(new ScriptTask()
 				 .inlineBody("echo 'foo bar'\ndate\necho 'hello world!!!'\necho 'yay, it works!'\ndate"),
 				 new ScriptTask()
-				 .inlineBody("echo 'more foobars and snafus and such'")
+				 .inlineBody("echo 'more foobars and snafus and such'"),
+				 new ScriptTask()
+				 .inlineBody("Demo Task thing")
 				 )
 			  )
 		    );
