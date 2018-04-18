@@ -89,7 +89,7 @@ public class PlanSpec {
 				 new ScriptTask()
 				 .inlineBody("echo 'more foobars and snafus and such'"),
 				 new ScriptTask()
-				 .inlineBody("echo 'Demo Task thing'")
+				 .inlineBody("echo 'Demo Task thing!'")
 				 )
 			  )
 		    );
