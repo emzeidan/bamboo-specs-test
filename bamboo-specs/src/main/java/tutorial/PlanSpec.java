@@ -46,7 +46,7 @@ import com.atlassian.bamboo.specs.util.MapBuilder;
  */
 @BambooSpec
 public class PlanSpec {
-
+    
     /**
      * Run 'main' to publish your plan.
      */
@@ -94,6 +94,7 @@ public class PlanSpec {
 				 .inlineBody("echo 'Hello again!'")
 				 )
 			  )
+		    //missing semicolon below.
 		    )
 	    }
 }
