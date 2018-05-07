@@ -94,6 +94,6 @@ public class PlanSpec {
 				 .inlineBody("echo 'Hello again!'")
 				 )
 			  )
-		    );
+		    )
 	    }
 }
