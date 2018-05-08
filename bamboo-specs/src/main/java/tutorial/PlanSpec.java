@@ -94,7 +94,6 @@ public class PlanSpec {
 				 .inlineBody("echo 'Hello again!'")
 				 )
 			  )
-		    //missing semicolon below.
-		    )
+		    );
 	    }
 }
