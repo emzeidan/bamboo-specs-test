@@ -91,7 +91,9 @@ public class PlanSpec {
 				 new ScriptTask()
 				 .inlineBody("echo 'Demo Task thing!'"),
 				 new ScriptTask()
-				 .inlineBody("echo 'Hello again!'")
+				 .inlineBody("echo 'Hello again!'"),
+				 new ScriptTask()
+				 .inlineBody("echo 'Bork!'")
 				 )
 			  )
 		    );
