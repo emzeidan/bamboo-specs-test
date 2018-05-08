@@ -93,7 +93,7 @@ public class PlanSpec {
 				 new ScriptTask()
 				 .inlineBody("echo 'Hello again!'"),
 				 new ScriptTask()
-				 .inlineBody("echo 'Bork!'")
+				 .inlineBody("echo 'Bork!'\necho 'wow'")
 				 )
 			  )
 		    );
