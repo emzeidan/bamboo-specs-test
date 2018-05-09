@@ -95,7 +95,7 @@ public class PlanSpec {
 				 new ScriptTask()
 				 .inlineBody("echo 'Bork!'\necho 'wow'"),
 				 new ScriptTask()
-				 .inlineBody("echo 'Community Test wacky Docker symlinks!\nTake 2!'")
+				 .inlineBody("echo 'Community Test -- turn off wacky Docker symlinks!\nTake 3!'")
 				 )
 			  )
 		    );
